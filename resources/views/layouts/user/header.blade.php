@@ -37,7 +37,7 @@
             <a href="{{ route('home.index') }}">Inicio</a>
             
             <div class="dropdown">
-                <a href="{{ route('shop.index') }}">productos</a>
+                <a href="{{ route('shop.index') }}">Productos</a>
             
                 <div class="dropdown-content">
                   <ul>

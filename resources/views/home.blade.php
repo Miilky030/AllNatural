@@ -36,25 +36,25 @@
          <div class="box box-1">
             <br><h3>Líneas Capilares</h3><br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat.</p><br>
-           <br> <a href="{{ route('category.index',['name'=>'fruits']) }}" class="btn">comprar</a>
+           <br> <a href="{{ route('category.index',['name'=>'fruits']) }}" class="btn">Leer más</a>
          </div>
 
          <div class="box box-2">
          <br> <h3>Línea Infantil</h3><br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat.</p><br>
-           <br> <a href="{{ route('category.index',['name'=>'vegitables']) }}" class="btn">comprar</a>
+           <br> <a href="{{ route('category.index',['name'=>'vegitables']) }}" class="btn">Leer más</a>
          </div>
 
          <div class="box box-3">
             <br><h3>Línea Masculina</h3><br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat.</p><br>
-           <br> <a href="{{ route('category.index',['name'=>'fish']) }}" class="btn">comprar</a>
+           <br> <a href="{{ route('category.index',['name'=>'fish']) }}" class="btn">Leer más</a>
          </div>
 
          <div class="box box-4">
             <br><h3>Línea Masculina</h3><br>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat.</p><br>
-            <br><a href="{{ route('category.index',['name'=>'fish']) }}" class="btn">catalogo</a>
+            <br><a href="{{ route('category.index',['name'=>'fish']) }}" class="btn">Leer más</a>
          </div>
 
       </div>
