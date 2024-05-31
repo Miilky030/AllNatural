@@ -10,6 +10,9 @@ export default {
     ],
 
     theme: {
+        colors: {
+            'brownie': '#7B4618',
+        },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
