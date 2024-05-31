@@ -5,10 +5,10 @@
 
 <section class="p-category">
 
-   <a href="{{ route('category.index',['name'=>'fruits']) }}">Líneas Capilares</a>
-   <a href="{{ route('category.index',['name'=>'vegitables']) }}">Línea Infantil</a>
-   <a href="{{ route('category.index',['name'=>'fish']) }}">Línea Masculina</a>
-   <a href="{{ route('category.index',['name'=>'meat']) }}">Catalogo</a>
+   <a href="{{ route('category.index',['name'=>'Líneas Capilares']) }}">Líneas Capilares</a>
+   <a href="{{ route('category.index',['name'=>'Línea Infantil']) }}">Línea Infantil</a>
+   <a href="{{ route('category.index',['name'=>'Línea Masculina']) }}">Línea Masculina</a>
+   <a href="{{ route('category.index',['name'=>'Catálogo']) }}">Catálogo</a>
 </section>
 
 <section class="products">
