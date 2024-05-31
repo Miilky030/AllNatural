@@ -21,15 +21,15 @@
 
    <section class="p-category">
 
-      <a href="{{ route('category.index',['name'=>'fruits']) }}">Líneas Capilares</a>
-      <a href="{{ route('category.index',['name'=>'vegitables']) }}">Línea Infantil</a>
-      <a href="{{ route('category.index',['name'=>'fish']) }}">Línea Masculina</a>
-      <a href="{{ route('category.index',['name'=>'meat']) }}">Catalogo</a>
+      <a href="{{ route('category.index',['name'=>'Líneas Capilares']) }}">Líneas Capilares</a>
+      <a href="{{ route('category.index',['name'=>'Línea Infantil']) }}">Línea Infantil</a>
+      <a href="{{ route('category.index',['name'=>'Línea Masculina']) }}">Línea Masculina</a>
+      <a href="{{ route('category.index',['name'=>'Catálogo']) }}">Catalogo</a>
    </section>
 
    <section class="home-category">
 
-      <h1 class="title">Top 3 de nuestros productos mas vendidos</h1>
+      <h1 class="title">Ventajas de usar All Natural</h1>
 
       <div class="box-container">
 
@@ -59,21 +59,37 @@
 
       </div>
 
-   </section><br>
+   </section>
 
-   <br> <div class="custom-bg">
+  <br><div class="custom-bg">
 
-      <section class="custom-home">
-  
-          <div class="custom-content">
-              <h3>Nueva línea Masculina</h3>
-              <p>Nuestra nueva línea masculina está diseñada para ofrecer una limpieza profunda y revitalizante, dejando el cabello fresco, fuerte y lleno de vitalidad. Estos productos están formulados con ingredientes naturales que hidratan y nutren el cuero cabelludo, combatiendo la sequedad y la caspa. </p>
-           
-          </div>
-  
-      </section>
-  
-  </div>
+   <section class="custom-home">
+
+       <div class="custom-content">
+           <h3>Top 3 de nuestros productos más vendidos</h3>
+           <p>El pre-poo prepara tu cabello antes del lavado, protegiendo e hidratando profundamente cada hebra. La jalea reparadora es perfecta para restaurar el cabello dañado, ofreciendo una mezcla única de ingredientes que nutren y fortalecen desde la raíz hasta las puntas. Finalmente, el gotero anticaída y crecimiento estimula el cuero cabelludo, promoviendo un crecimiento saludable y previniendo la caída del cabello, todo gracias a su fórmula avanzada y natural. </p>
+        
+       </div>
+
+   </section>
+
+</div><br>
+
+
+
+<br><div class="masculine-bg">
+
+   <section class="masculine-home">
+
+       <div class="masculine-content">
+           <h3>Nueva línea Masculina</h3>
+           <p>Nuestra nueva línea masculina está diseñada para ofrecer una limpieza profunda y revitalizante, dejando el cabello fresco, fuerte y lleno de vitalidad. Estos productos están formulados con ingredientes naturales que hidratan y nutren el cuero cabelludo, combatiendo la sequedad y la caspa.</p>
+
+       </div>
+
+   </section>
+
+</div><br>
 {{-- 
    <section class="products">
 

@@ -34,9 +34,22 @@
         </div>
 
         <nav class="navbar">
-           
             <a href="{{ route('home.index') }}">Inicio</a>
-            <a href="{{ route('shop.index') }}">Tienda</a>
+            
+            <div class="dropdown">
+                <a href="{{ route('shop.index') }}">productos</a>
+            
+                <div class="dropdown-content">
+                  <ul>
+                    <li><a href="{{ route('category.index',['name'=>'Líneas Capilares']) }}">Líneas Capilares</a></li>
+                    <li><a href="{{ route('category.index',['name'=>'Línea Infantil']) }}">Línea Infantil</a></li>
+                    <li><a href="{{ route('category.index',['name'=>'Línea Masculina']) }}">Línea Masculina</a></li>
+                    <li><a href="{{ route('category.index',['name'=>'Catálogo']) }}">Cátalogo</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+
             <a href="{{ route('order.index') }}">Ordenes</a>
             <a href="{{ route('about.index') }}">Sobre nosotros</a>
             <a href="{{ route('message.index',['type'=>'user']) }}">Contacto</a>
