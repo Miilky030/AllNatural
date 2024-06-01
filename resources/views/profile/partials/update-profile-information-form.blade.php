@@ -18,13 +18,13 @@
         @method('patch')
 
         <div>
-            <x-input-label for="name" class="text-xl" :value="__('Name')" />
+            <x-input-label for="name" class="text-xl" :value="__('Nombre')" />
             <x-text-input id="name" name="name" type="text" class="mt-1 block w-full text-xl" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
 
         <div>
-            <x-input-label for="email" class="text-xl" :value="__('Email')" />
+            <x-input-label for="email" class="text-xl" :value="__('Correo')" />
             <x-text-input id="email" name="email" type="email" class="text-xl mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
             <x-input-error class="mt-2" :messages="$errors->get('email')" />
 
@@ -48,13 +48,13 @@
         </div>
 
         <div>
-            <x-input-label for="image" class="text-xl" :value="__('Image')" />
+            <x-input-label for="image" class="text-xl" :value="__('Imagen')" />
             <x-text-input id="image" name="image" type="file" class="text-xl mt-1 block w-full" :value="old('image', $user->image)" required autofocus autocomplete="image" />
             <x-input-error class="mt-2" :messages="$errors->get('image')" />
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button class="text-2xl">{{ __('Save') }}</x-primary-button>
+            <x-primary-button class="text-2xl">{{ __('Guardar') }}</x-primary-button>
 
             @if (session('status') === 'profile-updated')
                 <p
@@ -63,7 +63,7 @@
                     x-transition
                     x-init="setTimeout(() => show = false, 2000)"
                     class="text-xl text-gray-600"
-                >{{ __('Saved.') }}</p>
+                >{{ __('Guardado') }}</p>
             @endif
         </div>
     </form>
