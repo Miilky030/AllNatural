@@ -111,6 +111,10 @@ Route::group(['middleware' => ['auth', 'verified','usertypevalid']], function()
 
     Route::get('/order/{orderId}/summary', [OrderController::class, 'showOrderSummary'])->name('order.summary');
 
+    Route::get('/blog', function () {
+        return view('blog');
+    })->name('blog.index');
+
 });
 
 

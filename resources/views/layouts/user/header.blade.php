@@ -35,10 +35,8 @@
 
         <nav class="navbar">
             <a href="{{ route('home.index') }}">Inicio</a>
-            
             <div class="dropdown">
-                <a href="{{ route('shop.index') }}">Productos</a>
-            
+                <a href="{{ route('shop.index') }}">Productos <span>▼</span></a>
                 <div class="dropdown-content">
                   <ul>
                     <li><a href="{{ route('category.index',['name'=>'Líneas Capilares']) }}">Líneas Capilares</a></li>
@@ -48,10 +46,9 @@
                   </ul>
                 </div>
               </div>
-            
-
             <a href="{{ route('order.index') }}">Ordenes</a>
-            <a href="{{ route('about.index') }}">Sobre nosotros</a>
+             <a href="{{ route('about.index') }}">Sobre nosotros</a>
+            <a href="{{ route('blog.index') }}">Blog</a>
             <a href="{{ route('message.index',['type'=>'user']) }}">Contacto</a>
         </nav>
 
