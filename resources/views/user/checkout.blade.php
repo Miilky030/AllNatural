@@ -46,8 +46,8 @@
               <div class="inputBox">
                  <span>Método de pago :</span>
                  <select name="method" class="box" required>
-                    <option value="cash on delivery">Efectivo</option>
-                    <option value="credit card">Tarjeta</option>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Tarjeta">Tarjeta</option>
                     {{-- <option value="paytm">paytm</option>
                     <option value="paypal">paypal</option> --}}
                  </select>
