@@ -42,7 +42,7 @@ class OrderController extends Controller
 
         $request['user_id']=Auth::user()->id;
 
-        $request['address']='flat no. '. $request['flat'] .' '. $request['street'] .' '. $request['city'] .' '. $request['state'] .' '. $request['country'] .' - '. $request['pin_code'];
+        $request['address']='flat no. '. $request['flat'] .' '. $request['street'] .' '. $request['secta'].' '. $request['city'];
 
         $request['placed_on']=date('d-M-Y');
 

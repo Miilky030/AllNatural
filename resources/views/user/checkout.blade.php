@@ -33,11 +33,11 @@
            <div class="flex">
               <div class="inputBox">
                  <span>Nombre :</span>
-                 <input type="text" name="name" placeholder="escriba su nombre" class="box" required>
+                 <input type="text" name="name" placeholder="nombre*" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Teléfono :</span>
-                 <input type="text" name="number" placeholder="escriba su número de teléfono" class="box" required>
+                 <input type="text" name="number" placeholder="número de teléfono*" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Email :</span>
@@ -57,15 +57,19 @@
               </div>
               <div class="inputBox">
                  <span>Direccion linea 01 :</span>
-                 <input type="text" name="flat" placeholder="dirección" class="box" required>
+                 <input type="text" name="flat" placeholder="n. casa*" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Direccion linea 02 :</span>
-                 <input type="text" name="street" placeholder="calle" class="box" required>
+                 <input type="text" name="street" placeholder="calle*" class="box" required>
+              </div>
+              <div class="inputBox">
+                 <span>Sector :</span>
+                 <input type="text" name="secta" placeholder="sector*" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Ciudad :</span>
-                 <input type="text" name="city" placeholder="ciudad" class="box" required>
+                 <input type="text" name="city" placeholder="ciudad*" class="box" required>
               </div>
               <input type="hidden" name="total_products" value="{{ substr($name_products,0,-1) }}">
 
