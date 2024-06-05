@@ -28,53 +28,44 @@
      
         <form action="{{ route('order.store') }}" method="POST">
             @csrf
-           <h3>Dirección de envió</h3>
+           <h3>Dirección de envio</h3>
      
            <div class="flex">
               <div class="inputBox">
                  <span>Nombre :</span>
-                 <input type="text" name="name" placeholder="escriba su nombre*" class="box" required>
+                 <input type="text" name="name" placeholder="escriba su nombre" class="box" required>
               </div>
               <div class="inputBox">
-                 <span>Telefono :</span>
-                 <input type="number" name="number" placeholder="escriba su número de teléfono" class="box" required>
+                 <span>Teléfono :</span>
+                 <input type="text" name="number" placeholder="escriba su número de teléfono" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Email :</span>
-                 <input type="email" name="email" placeholder="correo electronico*" class="box" required>
+                 <input type="email" name="email" placeholder="correo electrónico*" class="box" required>
               </div>
               <div class="inputBox">
-                 <span>Metodo de pago :</span>
+                 <span>Método de pago :</span>
                  <select name="method" class="box" required>
-                    <option value="cash on delivery">Pago contra entrega</option>
-                    <option value="credit card">tarjeta de crédito</option>
+                    <option value="cash on delivery">Efectivo</option>
+                    <option value="credit card">Tarjeta</option>
                     {{-- <option value="paytm">paytm</option>
                     <option value="paypal">paypal</option> --}}
                  </select>
+                 <p class="mt-1 text-xl text-gray-600">
+            {{ __('El pago se realiza exclusivamente en la entrega') }}
+        </p>
               </div>
               <div class="inputBox">
                  <span>Direccion linea 01 :</span>
-                 <input type="text" name="flat" placeholder="dirección*" class="box" required>
+                 <input type="text" name="flat" placeholder="dirección" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Direccion linea 02 :</span>
-                 <input type="text" name="street" placeholder="calle*" class="box" required>
+                 <input type="text" name="street" placeholder="calle" class="box" required>
               </div>
               <div class="inputBox">
                  <span>Ciudad :</span>
-                 <input type="text" name="city" placeholder="ciudad*" class="box" required>
-              </div>
-              <div class="inputBox">
-                 <span>Estado :</span>
-                 <input type="text" name="state" placeholder="estado\provincia*" class="box" required>
-              </div>
-              <div class="inputBox">
-                 <span>Pais :</span>
-                 <input type="text" name="country" placeholder="nombre del país*" class="box" required>
-              </div>
-              <div class="inputBox">
-                 <span>Código Postal :</span>
-                 <input type="number" min="0" name="pin_code" placeholder="código postal*" class="box" required>
+                 <input type="text" name="city" placeholder="ciudad" class="box" required>
               </div>
               <input type="hidden" name="total_products" value="{{ substr($name_products,0,-1) }}">
 
